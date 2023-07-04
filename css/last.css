@@ -1,0 +1,96 @@
+header {
+    background-color: #e84a58;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    color: black;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  /* body {
+    background: -webkit-gradient(linear, left bottom, left top, from(#e17f6b), to(white), color-stop(0.75, #eee));
+  } */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+.task {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.sticky-note-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sticky-note {
+    background-color: rgb(255, 235, 203);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    
+   
+    width: 300px;
+    float: inline-start;
+    min-height: 200px;
+    box-sizing: border-box;
+    /* align-self: flex-start; */
+    margin: auto;
+    position: relative;
+  }
+  
+  .sticky-note.purple {
+    background-color: #fbd4d8;
+  }
+
+  .sticky-note .note-heading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h2{
+    font-family: 'Playfair Display', serif;
+  color: #222;
+  margin-bottom: 20px;
+  }
+
+  .bottom-right-button {
+    background-color: rgb(255, 235, 203);
+    color: #e84a58;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: font-weight 0.1s ease-in-out;
+  }
+
+  .bottom-right-button:hover {
+    background-color: #e84a58;
+    color: #fff;
+    /* box-shadow: 0 0 5px #afe0fa, 0 0 25px #afe0fa, 0 0 50px #afe0fa, 0 0 200px #afe0fa; */
+  }

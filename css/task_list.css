@@ -1,0 +1,130 @@
+header {
+    background-color: #005a9e;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    color: white;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .first_heading {
+    /* flex: 1;
+    align-self: flex-start; */
+    /* padding-top: 100px; */
+    padding-left: 50px;
+    font-size: 40px; 
+            font-weight: bold;
+            color: black; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+.first_heading h2{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+.task {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.sticky-note-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sticky-note {
+    background-color: #d3c8e6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    
+   
+    width: 300px;
+    float: inline-start;
+    min-height: 200px;
+    box-sizing: border-box;
+    /* align-self: flex-start; */
+    margin: auto;
+    position: relative;
+    text-align: center;
+  }
+  
+  .sticky-note.purple {
+    background-color: #85d5f8;
+  }
+
+  .sticky-note .note-heading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .task-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .task-list li {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    counter-increment: task-counter;
+  }
+  
+  .task-list li::before {
+    content: counter(task-counter);
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  h2{
+    font-family: 'Playfair Display', serif;
+  color: #222;
+  margin-bottom: 20px;
+  }
+
+  .bottom-right-button {
+    background-color: #b9e3f5;
+    color: #005a9e;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: font-weight 0.1s ease-in-out;
+  }
+
+  .bottom-right-button:hover {
+    background-color: #005a9e;
+    color: #fff;
+  }
